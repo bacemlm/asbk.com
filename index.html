@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>ASBK - Association Sportive Beni Khedache</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="ASBK Logo" class="logo-img">
+                <span class="logo-text">ASBK</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="#kit" class="nav-link" data-i18n="nav.kit">Kit</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                <li class="language-switcher">
+                    <button id="langToggle" class="lang-btn" aria-label="Toggle language">
+                        <span id="langDisplay">EN</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero.title">Association Sportive Beni Khedache</h1>
+            <div class="line"></div>
+            <div class="home-img">
+                <img src="logo.png" alt="ASBK Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about.title">About ASBK</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about.description1">Founded in 2005 in Beni Khedache, ASBK is a sports club dedicated to developing local talent and promoting sports among youth. The team currently competes in the Tunisian Championship, Level 3, striving to achieve excellence and foster a strong sports culture in the local community.</p>
+                    <p data-i18n="about.description2">Our mission is to provide world-class training, foster talent development, and create opportunities for athletes of all levels to achieve their dreams.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>200+</h3>
+                        <p data-i18n="about.members">Active Members</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>25+</h3>
+                        <p data-i18n="about.years">Years</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>3<sup>th</sup></h3>
+                        <p data-i18n="about.championship">Tunisian Championship</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kit Section -->
+    <div id="kit" class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+                <div class="item" style="background-image: url(images/gk2.png);">
+                    <div class="content">
+                        <div class="name">Goalkeeper second kit for this season 2025/2026</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(images/kit1.png);">
+                    <div class="content">
+                        <div class="name">Players first kit for this season 2025/2026</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(images/kit2.png);">
+                    <div class="content">
+                        <div class="name">Players second kit for this season 2025/2026</div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(images/gk1.png);">
+                    <div class="content">
+                        <div class="name">Goalkeeper first kit for this season 2025/2026</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-controls">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" data-i18n-placeholder="contact.name" required>
+                    <input type="email" placeholder="Your Email" data-i18n-placeholder="contact.email" required>
+                    <textarea placeholder="Your Message" data-i18n-placeholder="contact.message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn" data-i18n="contact.send">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4 data-i18n="contact.location">📍 Location</h4>
+                        <p>Beni Khedache, Medenine, Tunisia</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📞 Phone</h4>
+                        <p>+216 27 357 191</p>
+                    </div>
+                    <div class="info-item">
+                        <h4 data-i18n="contact.email">✉️ Email</h4>
+                        <p>info@asbk.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-content">
+            <h3 data-i18n="footer.title">ASBK - Association Sportive Beni Khedache</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/asbkh2017" title="Facebook" target="_blank">f</a>
+            </div>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                <a href="#" data-i18n="footer.contact">Contact Us</a>
+                <a href="#" data-i18n="footer.sponsorship">Sponsorship</a>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 Association Sportive Beni Khedache. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translation.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
